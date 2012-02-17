@@ -25,6 +25,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	assert(bResult == TRUE);
 
+
+
 	Py_Finalize();
 
 	return 0;
