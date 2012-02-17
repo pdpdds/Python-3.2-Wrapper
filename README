@@ -1,0 +1,23 @@
+1. Descryption
+this module is python 3.2 wrapper. it wraps python API in c++.
+many python api can be available in internet.
+but many source operate in python version 2.7 or lower.
+and python 3.2's API was many changed, specically string(ansi -> unicode)
+
+so i implemented this module for python 3.2
+and to hide python api and to use like c++ function call.
+
+2. functionality
+except libray, four project exist.
+ - a python module's function register and call
+ - many python module's function register and call
+ - class call
+ - python module creation using c++
+
+
+3. Required
+you need download python 3.2. and python 3.2 source code and compile it.
+and copy python32.dll, python32_d.dll into Bin32 folder,
+and copy libray files to lib folder.
+that's it. you can compile, and test it.
+
