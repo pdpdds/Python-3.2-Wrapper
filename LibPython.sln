@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibPython", "LibPython\LibPython.vcproj", "{DE61B156-F5BB-4EBC-B9E2-05047EB8E827}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZipExample", "ZipExample\ZipExample.vcproj", "{089822E4-7AC5-439D-BD1B-B33BD49AEDC5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827} = {DE61B156-F5BB-4EBC-B9E2-05047EB8E827}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PythonClass", "PythonClass\PythonClass.vcproj", "{F04E7A0C-6E4D-4A5F-BEBE-B11EAB3E498F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827} = {DE61B156-F5BB-4EBC-B9E2-05047EB8E827}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadTest", "ThreadTest\ThreadTest.vcproj", "{A3EBD495-9FE7-4A26-91B7-622A86823B85}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827} = {DE61B156-F5BB-4EBC-B9E2-05047EB8E827}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiModuleLoad", "MultiModuleLoad\MultiModuleLoad.vcproj", "{57B13AC1-01E1-4F4A-8BB7-81C252BFF987}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827} = {DE61B156-F5BB-4EBC-B9E2-05047EB8E827}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827}.Debug|Win32.Build.0 = Debug|Win32
+		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827}.Release|Win32.ActiveCfg = Release|Win32
+		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827}.Release|Win32.Build.0 = Release|Win32
+		{089822E4-7AC5-439D-BD1B-B33BD49AEDC5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{089822E4-7AC5-439D-BD1B-B33BD49AEDC5}.Debug|Win32.Build.0 = Debug|Win32
+		{089822E4-7AC5-439D-BD1B-B33BD49AEDC5}.Release|Win32.ActiveCfg = Release|Win32
+		{089822E4-7AC5-439D-BD1B-B33BD49AEDC5}.Release|Win32.Build.0 = Release|Win32
+		{F04E7A0C-6E4D-4A5F-BEBE-B11EAB3E498F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F04E7A0C-6E4D-4A5F-BEBE-B11EAB3E498F}.Debug|Win32.Build.0 = Debug|Win32
+		{F04E7A0C-6E4D-4A5F-BEBE-B11EAB3E498F}.Release|Win32.ActiveCfg = Release|Win32
+		{F04E7A0C-6E4D-4A5F-BEBE-B11EAB3E498F}.Release|Win32.Build.0 = Release|Win32
+		{A3EBD495-9FE7-4A26-91B7-622A86823B85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3EBD495-9FE7-4A26-91B7-622A86823B85}.Debug|Win32.Build.0 = Debug|Win32
+		{A3EBD495-9FE7-4A26-91B7-622A86823B85}.Release|Win32.ActiveCfg = Release|Win32
+		{A3EBD495-9FE7-4A26-91B7-622A86823B85}.Release|Win32.Build.0 = Release|Win32
+		{57B13AC1-01E1-4F4A-8BB7-81C252BFF987}.Debug|Win32.ActiveCfg = Debug|Win32
+		{57B13AC1-01E1-4F4A-8BB7-81C252BFF987}.Debug|Win32.Build.0 = Debug|Win32
+		{57B13AC1-01E1-4F4A-8BB7-81C252BFF987}.Release|Win32.ActiveCfg = Release|Win32
+		{57B13AC1-01E1-4F4A-8BB7-81C252BFF987}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
