@@ -8,18 +8,44 @@
 #include "PythonResultInt.h"
 #include "PythonResultUnicode.h"
 
+std::string UnicodeToAnsi(std::wstring str)
+{
+
+	int nRequired = WideCharToMultiByte(CP_UTF8, 0, str.c_str(), (int)str.length(), NULL, 0, NULL, NULL);
+	if (nRequired == 0) return "";
+
+	CHAR* lpWideChar = new CHAR[nRequired + 1];
+	if (lpWideChar == NULL) return "";
+	nRequired = WideCharToMultiByte(CP_UTF8, 0, str.c_str(), (int)str.length(), lpWideChar, nRequired, NULL, NULL);
+	if (nRequired == 0) return "";
+	lpWideChar[nRequired] = '\0';
+	std::string wstr = lpWideChar;
+	delete[]lpWideChar;
+	return wstr;
+}
+
 int _tmain(int argc, _TCHAR* argv[])
 {
 	Py_Initialize();
 
 	CPythonWrapper Wrapper;
 
-	Wrapper.AddModule("py_function");
-	Wrapper.AddFunction("py_function", "multiply1");
-	Wrapper.AddFunction("py_function", "multiply");
+	//Wrapper.AddModule("py_function");
+	//Wrapper.AddFunction("py_function", "multiply1");
+	//Wrapper.AddFunction("py_function", "multiply");
 
-	Wrapper.AddModule("hello");
-	Wrapper.AddFunction("hello", "echo");
+	Wrapper.AddModule("checksum");
+	Wrapper.AddFunction("checksum", "checksum");
+
+	PythonResultUnicode Result;
+	BOOL bResult = Wrapper.ExcecuteFunc(&Result, "checksum", "checksum", 0);
+	
+	std::string result = UnicodeToAnsi((wchar_t*)Result.GetResult().c_str());
+
+	//if(bResult)
+	{
+		std::cout << result.c_str();
+	}
 
 	CPythonArg Args(2);
 
@@ -27,8 +53,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	Args.Add(FirstArg);
 	Args.Add(SecondArg);
 
-	PythonResultInt Result;
-	BOOL bResult = Wrapper.ExcecuteFunc(&Result, "py_function", "multiply1", Args.GetArg());
+	
 
 	if(bResult)
 	{
@@ -48,7 +73,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	Py_Finalize();
 
-	getchar();
+	//getchar();
 
 	return 0;
 }

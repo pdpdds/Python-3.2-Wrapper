@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="PythonModule">
+      <UniqueIdentifier>{c123c74b-f437-4abd-bfe8-1879f34f8643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PythonResult">
+      <UniqueIdentifier>{d544719a-52f0-47f3-85fe-cd46f0a0e6ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PythonCore">
+      <UniqueIdentifier>{81482464-281a-4c44-975b-e8c8c73e8bed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonResultFloat.cpp">
+      <Filter>PythonResult</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonResultInt.cpp">
+      <Filter>PythonResult</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonResultList.cpp">
+      <Filter>PythonResult</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonResultMap.cpp">
+      <Filter>PythonResult</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonResultUnicode.cpp">
+      <Filter>PythonResult</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonArg.cpp">
+      <Filter>PythonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonClassWrapper.cpp">
+      <Filter>PythonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonFunctionMap.cpp">
+      <Filter>PythonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonModule.cpp">
+      <Filter>PythonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonScriptExecutor.cpp">
+      <Filter>PythonCore</Filter>
+    </ClCompile>
+    <ClCompile Include="PythonWrapper.cpp">
+      <Filter>PythonCore</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonResult.h">
+      <Filter>PythonResult</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonResultFloat.h">
+      <Filter>PythonResult</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonResultInt.h">
+      <Filter>PythonResult</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonResultList.h">
+      <Filter>PythonResult</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonResultMap.h">
+      <Filter>PythonResult</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonResultUnicode.h">
+      <Filter>PythonResult</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonArg.h">
+      <Filter>PythonCore</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonClassWrapper.h">
+      <Filter>PythonCore</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonFunctionMap.h">
+      <Filter>PythonCore</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonModule.h">
+      <Filter>PythonCore</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonScriptExecutor.h">
+      <Filter>PythonCore</Filter>
+    </ClInclude>
+    <ClInclude Include="PythonWrapper.h">
+      <Filter>PythonCore</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <string>
 #include "PythonResult.h"
 
 class PythonResultList : public PythonResult

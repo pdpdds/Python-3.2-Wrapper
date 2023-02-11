@@ -1,27 +1,17 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibPython", "LibPython\LibPython.vcproj", "{DE61B156-F5BB-4EBC-B9E2-05047EB8E827}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibPython", "LibPython\LibPython.vcxproj", "{DE61B156-F5BB-4EBC-B9E2-05047EB8E827}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZipExample", "ZipExample\ZipExample.vcproj", "{089822E4-7AC5-439D-BD1B-B33BD49AEDC5}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827} = {DE61B156-F5BB-4EBC-B9E2-05047EB8E827}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZipExample", "ZipExample\ZipExample.vcxproj", "{089822E4-7AC5-439D-BD1B-B33BD49AEDC5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PythonClass", "PythonClass\PythonClass.vcproj", "{F04E7A0C-6E4D-4A5F-BEBE-B11EAB3E498F}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827} = {DE61B156-F5BB-4EBC-B9E2-05047EB8E827}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PythonClass", "PythonClass\PythonClass.vcxproj", "{F04E7A0C-6E4D-4A5F-BEBE-B11EAB3E498F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadTest", "ThreadTest\ThreadTest.vcproj", "{A3EBD495-9FE7-4A26-91B7-622A86823B85}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827} = {DE61B156-F5BB-4EBC-B9E2-05047EB8E827}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadTest", "ThreadTest\ThreadTest.vcxproj", "{A3EBD495-9FE7-4A26-91B7-622A86823B85}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiModuleLoad", "MultiModuleLoad\MultiModuleLoad.vcproj", "{57B13AC1-01E1-4F4A-8BB7-81C252BFF987}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DE61B156-F5BB-4EBC-B9E2-05047EB8E827} = {DE61B156-F5BB-4EBC-B9E2-05047EB8E827}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiModuleLoad", "MultiModuleLoad\MultiModuleLoad.vcxproj", "{57B13AC1-01E1-4F4A-8BB7-81C252BFF987}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,5 +42,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {651061DB-F3B5-4E47-8727-C4632946BBAF}
 	EndGlobalSection
 EndGlobal
